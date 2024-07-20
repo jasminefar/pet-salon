@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: 'Arial', sans-serif;
+}
+
+#salon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#pet {
+    position: relative;
+    width: 200px;
+    height: 300px;
+    margin-top: 20px;
+}
+
+.pet-body {
+    width: 100%;
+    height: 150px;
+    background-color: #FF6347;
+    border-radius: 50% 50% 40% 40%;
+    position: relative;
+    top: 50px;
+}
+
+.head {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background-color: #FF6347;
+    border-radius: 50%;
+    top: -60px;
+    left: 40px;
+}
+
+.ear {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #FF6347;
+    border-radius: 50%;
+    top: -20px;
+}
+
+.left-ear {
+    left: 10px;
+}
+
+.right-ear {
+    right: 10px;
+}
+
+.eye {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #000;
+    border-radius: 50%;
+    top: 30px;
+}
+
+.left-eye {
+    left: 25px;
+}
+
+.right-eye {
+    right: 25px;
+}
+
+.nose {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+    border-radius: 50%;
+    top: 60px;
+    left: 55px;
+}
+
+.mouth {
+    position: absolute;
+    width: 40px;
+    height: 10px;
+    background-color: #000;
+    border-radius: 0 0 20px 20px;
+    top: 70px;
+    left: 40px;
+}
+
+.accessory {
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    top: 20px;
+    left: 70px;
+    display: none;
+}
+
+#bow {
+    background-color: #FF69B4;
+    border-radius: 10px 10px 10px 10px;
+}
+
+#hat {
+    background-color: #8B4513;
+    border-radius: 50%;
+}
+
+#controls {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#controls h2 {
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #e0e0e0;
+}
+
+.spots .pet-body,
+.spots .head {
+    background: repeating-radial-gradient(#000 0, #000 2px, #FF6347 2px, #FF6347 20px);
+}
+
+.stripes .pet-body,
+.stripes .head {
+    background: repeating-linear-gradient(45deg, #000, #000 10px, #FF6347 10px, #FF6347 20px);
+}
